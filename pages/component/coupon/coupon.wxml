@@ -1,0 +1,111 @@
+<!--pages/component/coupon/coupon.wxml-->
+<view class="myyhq" bindtap="tabFun">
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">未使用(0)</view>   
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="tab-hd02" data-id="1">已使用(0)</view>
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="tab-hd03" data-id="2">已过期(0)</view>   
+</view>
+<view class="yhqcon">
+  <view class="cont-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    <!--没有优惠券-->
+    <view class="yhqno" style="display:none;">
+      <view class="h85"></view>
+      <view class="img">
+        <image src="/images/noyhq.png"></image>
+      </view>
+      <view class="text">
+        <view>没有优惠券？</view>
+        <navigator class="go">去企业店铺看看</navigator>
+      </view>
+      <view class="dimg">
+        <image src="/images/noyhqd.png"></image>
+      </view>
+    </view>
+    <!--有优惠券-->
+    <view class="notused">
+      <!--未使用-->
+      <view-yhq class="clearfix" wx:for="{{wsy}}" wx:key="id">
+        <view class="fl figure {{item.classn}}">
+          <view class="h30"></view>
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+          <view class="h30"></view>
+          <view class="tips">{{item.tips}}</view>
+          <view-quan>
+            <image src="/images/yhqquan.png"></image>
+          </view-quan>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl {{item.classn}}">{{item.leix}}</view-tips>{{item.tit}}
+          </view>
+          <view class="dd">
+            <navigator class="ljsy {{item.classn}}">立即使用</navigator>
+          </view>
+          <view class="time">{{item.time}}</view>
+          <view class="yts">
+            <image src="{{item.yimgs}}"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    <!--已使用-->
+    <view class="hadused">
+      <view-yhq class="clearfix" wx:for="{{ysy}}" wx:key="id">
+        <view class="fl figure {{item.classn}}">
+          <view class="h30"></view>
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+          <view class="h30"></view>
+          <view class="tips">{{item.tips}}</view>
+          <view-quan>
+            <image src="/images/yhqquan.png"></image>
+          </view-quan>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl {{item.classn}}">{{item.leix}}</view-tips>{{item.tit}}
+          </view>
+          <view class="dd"></view>
+          <view class="time">{{item.time}}</view>
+          <view class="yjsy">
+            <image src="{{item.yimgs}}"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    <!--已过期-->
+    <view class="expired">
+      <view-yhq class="clearfix" wx:for="{{ygq}}" wx:key="id">
+        <view class="fl figure {{item.classn}}">
+          <view class="h30"></view>
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+          <view class="h30"></view>
+          <view class="tips">{{item.tips}}</view>
+          <view-quan>
+            <image src="/images/yhqquan.png"></image>
+          </view-quan>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl {{item.classn}}">{{item.leix}}</view-tips>{{item.tit}}
+          </view>
+          <view class="dd">
+            
+          </view>
+          <view class="time">{{item.time}}</view>
+          <view class="yts">
+            <image src="{{item.yimgs}}"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+  </view>
+</view>

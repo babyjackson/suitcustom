@@ -1,0 +1,62 @@
+<!--index.wxml-->
+
+
+<!--搜索-->
+<view class="searchTopW clearfix">
+  <view class="fl location clearfix">
+    <view class="fl dw"><image src="/images/dw.png"></image></view>
+    <view class="city fl" bindtap='localaddress'>{{location}}</view>
+  </view>
+  <view class="fl xian1"></view>
+  <view class="fr input">
+    <input type="text" class="inp" placeholder="请输入关键字"></input>
+    <button class="search"><icon type="search" size="20"></icon></button>
+  </view>
+</view>
+<!--banner-->
+<view class="bannerW">
+  <swiper indicator-dots="true" indicator-color="#feffff" indicator-active-color="#00c395" circular="true" class="banner">
+    <block wx:for="{{banner}}" wx:key="id">
+      <swiper-item>
+        <navigator url="{{item.url}}">
+          <image src="{{item.imgsrc}}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--排序-->
+<view class="sortTab clearfix" bindtap="tabFun" data-is="0">
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" data-id="0">智能排序</view>   <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1">距离最近</view>
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2">销量最高</view> </view>
+<view class="consort">
+  <view class="cont-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    <view class="h3"></view>
+    <view-item wx:for="{{consort}}" wx:key="id">
+      <navigator url="{{item.url}}">
+        <view class="fl figure">
+          <image src="{{item.imgsrc}}"></image>
+        </view>
+        <view class="fr dl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="ptwo clearfix">
+            <view class="fl zb clearfix">
+              <view class="branch fl">{{item.score}}分</view>
+              <view class="eva fl">{{item.eva}}条评论</view>
+            </view>
+            <view class="fr tips clearfix">
+              <view class="fl" wx:for="{{item.tips}}" wx:for-item="tips" wx:key="ids">{{tips}}</view>
+            </view>
+          </view>
+          <view class="addr">
+            <view class="ico fl"><image src="/images/dw.png"></image></view>
+            <view class="fl dz">{{item.address}}</view>
+            <view class="fr distance">{{item.distance}}km</view>
+          </view>
+        </view>
+      </navigator>
+    </view-item>
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">2</view>
+  <view class="cont-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">3</view>
+</view>

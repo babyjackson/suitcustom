@@ -1,0 +1,253 @@
+/* pages/component/order/wddd/wddd.wxss */
+@import '../../../common/common.wxss';
+.h200{
+  height: 200rpx;
+}
+.h175{
+  height: 175rpx;
+}
+.orderno{
+  background: #fff;
+}
+.orderno .imgord{
+  width: 490rpx;
+  height: 355rpx;
+  display: block;
+  margin: 0 auto;
+}
+.orderno .imgord image{
+  width: 490rpx;
+  height: 355rpx;
+  display: block;
+}
+page{
+  background: #efefef;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h120{
+  height: 120rpx;
+}
+.contwddd .cont-item{
+  display: none;
+}
+.contwddd  .on{
+  display: block;
+}
+.myorderTab{
+  padding: 0rpx 20rpx;
+  border-top: 1px solid #f0f0f0;
+  background: #fff;
+}
+.myorderTab view{
+  position: relative;
+  padding: 25rpx;
+  float: left;
+  color: #5d5d5d;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.myorderTab .active{
+  color: #23242a;
+  border-bottom: 4rpx solid #23242a;
+}
+.myorderTab view .tips{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+  background-color:#ffc327;
+  border-radius: 50%;
+  padding: 0;
+  top:12rpx;
+  right:0rpx;
+  font-size: 20rpx;
+}
+.contwddd{
+ background-color:#efefef;
+ margin:15rpx 15rpx 0rpx 15rpx;
+
+}
+.contwddd .cont-item{
+  background-color:#efefef;
+}
+.hasorder{
+  background-color: #fff;
+  margin-bottom:20rpx; 
+}
+.orderallTit{
+  font-size: 30rpx;
+  color: #23242a;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  border-bottom: 2rpx solid #ededed;
+  line-height: 70rpx;
+  padding: 0 15rpx;
+}
+.dptit{
+  font-size: 30rpx;
+  line-height: 80rpx;
+  padding: 0 15rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.goodscon{
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 30rpx 20rpx;
+}
+.goodscon .img{
+  width: 145rpx;
+  height:145rpx;
+}
+.goodscon .img image{
+  width:145rpx;
+  height: 145rpx;
+}
+.goodscon .titleC{
+  width: 420rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+.goodscon .titleC .tit{
+  font-size: 28rpx;
+  color: #292828;
+  line-height: 40rpx;
+  width: 420rpx;
+  overflow: hidden;
+
+  
+}
+.goodscon .titleC .tips{
+  font-size: 28rpx;
+  color: #929193;
+}
+.goodscon .price{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+}
+.goodscon .price text{
+  display: block;
+  text-align: right;
+}
+.goodscon .price .yuanj{
+  color: #828282;
+  text-decoration: line-through;
+}
+.goodscon .price .sf{
+  color: #515151;
+}
+.goodscon .price .num{
+  color: #828282;
+}
+.contwddd .btn{
+ width: 420rpx;
+ height: 85rpx;
+ margin-left:280rpx;
+}
+.contwddd .btn navigator{
+  width: 200rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 1rpx;
+  margin: 17rpx 0;
+  font-size: 28rpx;
+}
+.contwddd .btn navigator.xian{
+border:2rpx solid #989697;
+color: #989697;
+}
+.contwddd .btn navigator.bgred{
+  color: #fff;
+  background: #23242a;
+  border:2rpx solid #23242a;
+}
+
+.cnxh{
+  background-color: #efefef;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+}
+.recommendxg{
+  padding: 0 16rpx;
+}
+.recommendxg view-item{
+  width: 330rpx;
+  float: left;
+  padding: 10rpx;
+  height: 490rpx;
+  margin-bottom: 15rpx;
+  background: #fff;
+}
+.recommendxg view-item .img{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item image{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item .tit{
+  font-size: 24rpx;
+  color: #212121;
+  line-height: 30rpx;
+  height: 65rpx;
+  width: 330rpx;
+  overflow: hidden;
+  margin: 10rpx 0rpx 0 0rpx;
+}
+.recommendxg view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.recommendxg view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.recommendxg view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+button::after{
+  border: 0;
+}
+.recommendxg view-item:nth-of-type(odd){
+   float: left;
+ } 
+.recommendxg view-item:nth-of-type(even){
+   float: right;
+ }

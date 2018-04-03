@@ -1,0 +1,194 @@
+/* pages/component/details/details.wxss */
+@import '../../common/common.wxss';
+.banner{
+  width: 750rpx;
+  height: 600rpx;
+}
+.banner image{
+  width: 750rpx;
+  height: 600rpx;
+  display: block;
+}
+.caption{
+  width: 750rpx;
+  height: 190rpx;
+  background: #ffffff;
+  overflow: hidden;
+}
+.h40{
+  height: 40rpx;
+}
+.caption .tit{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  color: #313031;
+  text-align: center;
+}
+.h15{
+  height: 15rpx;
+}
+.review{
+  width: 190rpx;
+  height: 35rpx;
+  margin: 0 auto;
+}
+.review view-item{
+  width: 33rpx;
+  height: 33rpx;
+  display: block;
+  margin-right: 3rpx;
+}
+.review view-item image{
+  width: 33rpx;
+  height: 33rpx;
+  display: block;
+}
+.h20{
+  height: 20rpx;
+}
+.h20color{
+  height: 20rpx;
+  background: #f6f6f6;
+}
+.informW{
+  width: 750rpx;
+  height: 385rpx;
+  background: #ffffff;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.informW .ico{
+  height: 30rpx;
+  width: 30rpx;
+  margin:5rpx 15rpx 5rpx 30rpx;
+}
+.informW .ico image{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+}
+.informW .txt{
+  width: 640rpx;
+  height: 40rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #515151;
+  line-height: 40rpx;
+}
+.informW .tips>view{
+  width: 70rpx;
+  height: 40rpx;
+  display: block;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background: #e5f9f4;
+  overflow: hidden;
+  color: #00c395;
+  margin-left: 9rpx;
+}
+.h35{
+  height: 35rpx;
+}
+.purchase{
+  width: 695rpx;
+  height: 95rpx;
+  margin: 0 auto;
+  border-radius: 7rpx;
+  background: #1b1b1b;
+  display: block;
+}
+.purchase .purw{
+  width: 215rpx;
+  height: 75rpx;
+  margin: 0 auto;
+  padding-top:25rpx; 
+  font-size: 36rpx;
+  color: #feffff;
+  text-align: right;
+}
+.purchase .purw .ico{
+  width: 45rpx;
+  height: 45rpx;
+  display: block;
+  margin: 0;
+}
+.purchase .purw .ico image{
+ width: 45rpx;
+ height: 45rpx;
+ display: block;
+}
+.discount{
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 26rpx;
+  color: #515151;
+}
+.discount .alt{
+  margin: 40rpx 20rpx 0 0;
+  width: 15rpx;
+  height: 30rpx;
+}
+.discount .alt image{
+  width: 15rpx;
+  height: 30rpx;
+  display: block;
+}
+.discount .ico{
+  width: 35rpx;
+  height: 30rpx;
+  display: block;
+  margin: 40rpx 20rpx 40rpx 30rpx;
+}
+.discount .ico image{
+  width: 35rpx;
+  height: 30rpx;
+  display: block;
+}
+.up_to_data_eva{
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #222222;
+  text-indent: 30rpx;
+}
+.article .cap{
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  text-indent: 30rpx;
+  color: #222222;
+  font-weight: bold;
+}
+.article .con{
+  font-size: 30rpx;
+  color: #383838;
+  padding: 0 30rpx;
+  text-indent: 60rpx;
+  line-height: 50rpx;
+}
+.h80{
+  height: 80rpx;
+}
+.fixedRight{
+  width: 90rpx;
+  height: 210rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 40rpx;
+}
+.fixedRight .circular{
+  width: 90rppx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: #1b1b1b;
+  margin-bottom:10rpx;
+  padding: 0;
+}
+.fixedRight .circular image{
+  width: 90rpx;
+  height: 90rpx;
+  display: block;
+}

@@ -1,0 +1,223 @@
+/* pages/component/coupon/coupon.wxss */
+page{
+  background: #efefef;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.yhqcon .cont-item{
+  display: none;
+}
+.yhqcon  .on{
+  display: block;
+}
+.myyhq{
+  width: 750rpx;
+  height: 85rpx;
+  background: #fff;
+  display: flex;
+}
+.myyhq view{
+  width: 150rpx;
+  margin: 0 60rpx;
+  height: 81rpx;
+  border-bottom: 4rpx solid #fff;
+  font-size: 24rpx;
+  color: #333333;
+  text-align: center;
+  line-height: 81rpx;
+}
+.myyhq view.active{
+  border-bottom: 4rpx solid #23242a;
+}
+.h85{
+  height: 85rpx;
+}
+.yhqno .img{
+  width: 400rpx;
+  height: 185rpx;
+  margin: 0 auto;
+}
+.yhqno .img image{
+  width: 400rpx;
+  height: 185rpx;
+  display: block;
+}
+.yhqno .text{
+  width: 400rpx;
+  height: 90rpx;
+  margin: 0 auto;
+}
+.yhqno .text view{
+  font-size: 32rpx;
+  color: #333333;
+  text-align: center;
+  line-height: 50rpx;
+}
+.yhqno .text .go{
+  font-size: 23rpx;
+  color: #949494;
+  text-align: center;
+  line-height: 35rpx;
+}
+.yhqno .dimg{
+  width: 475rpx;
+  height: 25rpx;
+  margin: 0  auto;
+}
+.yhqno .dimg image{
+  width: 475rpx;
+  height: 25rpx;
+}
+.notused{
+  padding: 0 15rpx;
+}
+view-yhq{
+  width: 715rpx;
+  height: 215rpx;
+  border-radius: 12rpx;
+  overflow:hidden;
+  background: #ffffff;
+  display: block;
+  margin-top:25rpx;
+}
+view-yhq .figure{
+  width: 225rpx;
+  height: 215rpx;
+  position: relative;
+  border-right: 0;
+}
+view-yhq .figure .je{
+  padding-left: 35rpx;
+  font-size: 42rpx;
+  color: #ffffff;
+  height: 80rpx;
+  overflow: hidden;
+}
+view-yhq .figure .je text{
+  font-size: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+  padding: 0;
+  display: inline-block;
+  letter-spacing: -5rpx;
+  width: 130rpx;
+  overflow: hidden;
+}
+view-yhq .figure .tips{
+  font-size: 23rpx;
+  color: #ffffff;
+  text-indent: 25rpx;
+}
+.h30{
+  height: 30rpx;
+}
+view-yhq .figure view-quan{
+  display: block;
+  width: 8rpx;
+  height: 215rpx;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+view-yhq .figure view-quan image{
+  display: block;
+  width: 8rpx;
+  height: 215rpx;
+}
+
+view-yhq .dl{
+  width: 460rpx;
+  height: 215rpx;
+  position:relative;
+}
+view-yhq .dl .titq{
+  padding: 25rpx 0;
+  line-height: 30rpx;
+  font-size: 25rpx;
+  color: #505050;
+}
+view-yhq .dl .titq view-tips{
+  width: 70rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 21rpx;
+  color: #ffffff;
+  margin-right: 15rpx;
+  display: block;
+}
+view-yhq .dl .dd{
+  height: 50rpx;
+}
+view-yhq .dl .dd .ljsy{
+  width: 130rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border-radius: 25rpx;
+  font-size: 21rpx;
+  float: right;
+  margin-right: 20rpx;
+  background: #fff;
+}
+view-yhq .dl .time{
+  font-size: 20rpx;
+  color: #585858;
+  margin-top: 25rpx;
+}
+view-yhq .dl .yts{
+  width: 95rpx;
+  height: 95rpx;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+view-yhq .dl .yts image{
+  width: 95rpx;
+  height: 95rpx;
+  display: block;
+}
+view-yhq .dl .yjsy{
+  width: 150rpx;
+  height: 155rpx;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+view-yhq .dl .yjsy image{
+  width: 150rpx;
+  height: 155rpx;
+  display: block;
+}
+.zsbg{
+  background: #756ff4;
+  border:1rpx solid #7772f5;
+  color:#7772f5;
+}
+.lsbg{
+  background: #7fd5c7;
+  border:1rpx solid #7fd5c7;
+  color:#7fd5c7;
+}
+.hsbg{
+  background: #d2d2d2;
+  border:1rpx solid #d2d2d2;
+  color:#d2d2d2;
+}
+.hadused{
+  padding: 0 15rpx;
+}
+.expired{
+  padding: 0 15rpx;
+}

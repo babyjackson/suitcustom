@@ -1,0 +1,195 @@
+/* pages/component/me/me.wxss */
+@import '../../common/common.wxss';
+page{
+  background: #f7f7f7;
+}
+.package{
+  background: #fff;
+}
+.bannerW{
+  height: 375rpx;
+  width: 750rpx;
+  position: relative;
+}
+.bannerW .bannerbg{
+  width: 750rpx;
+  height: 375rpx;
+ }
+ .bannerW .bannerbg image{
+   width: 750rpx;
+   height: 375rpx;
+   display: block;
+ }
+.bannerW .user{
+    width: 750rpx;
+    height: 160rpx;
+    position: absolute;
+    top: 100rpx;
+}
+.bannerW .user .photo{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border:5rpx solid #434343;
+  margin-left: 30rpx;
+}
+.bannerW .user .photo image{
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+.bannerW .user .username{
+  width: 265rpx;
+  height: 160rpx;
+  line-height: 160rpx;
+  font-size: 36rpx;
+  color: #feffff;
+  overflow: hidden;
+  margin-left: 30rpx;
+}
+.package{
+  height: 150rpx;
+  width: 750rpx;
+  display: flex;
+}
+.package>view{
+  width: 50%;
+  height: 150rpx;
+}
+.package>view navigator{
+  width: 120rpx;
+  height: 150rpx;
+  margin: 0 auto;
+}
+.package>view navigator image{
+  width: 45rpx;
+  height: 45rpx;
+  display: block;
+  margin: 25rpx auto 20rpx;
+}
+.package>view navigator text{
+  font-size: 24rpx;
+  color: #161616;
+  text-align: center;
+  line-height: 25rpx;
+  display: block;
+}
+.h20{
+  height: 20rpx;
+  background: #f7f7f7;
+}
+.orderGit{
+  height: 310rpx;
+  width: 750rpx;
+  background: #fff;
+}
+.orderGit .bigtit{
+  width: 750rpx;
+  height: 100rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.orderGit .bigtit .ico{
+  width: 30rpx;
+  height: 35rpx;
+  display: block;
+  margin: 25rpx 24rpx 0 30rpx;
+}
+.orderGit .bigtit .ico image{
+  width: 30rpx;
+  height: 35rpx;
+  display: block;
+}
+
+.orderGit .bigtit .tx{
+  line-height: 35rpx;
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  color: #1c1c1c;
+}
+.orderGit .bigtit .alt{
+   width: 30rpx;
+  height: 35rpx;
+  display: block;
+  margin: 25rpx 15rpx 0 0;
+}
+.orderGit .bigtit .alt image{
+  width: 30rpx;
+  height: 35rpx;
+}
+.orderW{
+  width: 750rpx;
+  height: 240rpx;
+  background: #ffffff;
+  display: flex;
+  overflow: hidden;
+}
+.orderW .wp{
+  width: 33.33%;
+}
+.orderW .wp navigator{
+  width: 125rpx;
+  height: 240rpx;
+  display: block;
+  margin: 0 auto;
+}
+.orderW .wp navigator image{
+  width: 75rpx;
+  height: 75rpx;
+  display: block;
+  margin: 40rpx auto 30rpx;
+}
+.orderW .wp navigator text{
+  font-size: 24rpx;
+  color: #1c1c1c;
+  text-align: center;
+  line-height: 25rpx;
+  display: block;
+}
+.h20{
+  height: 20rpx;
+}
+.setUp{
+  width: 750rpx;
+  height: 100rpx;
+  background: #fff;
+}
+.setUp .ico{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 30rpx 15rpx 0 20rpx;
+}
+.setUp .ico image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.setUp .tx{
+  font-size: 30rpx;
+  color: #1c1c1c;
+  line-height: 100rpx;
+}
+.h35{
+  height: 35rpx;
+}
+.lastTips{
+  width: 325rpx;
+  height: 25rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+.lastTips text{
+  font-size: 25rpx;
+  color: #848384;
+  line-height: 25rpx;
+  padding: 0;
+  
+}
+.lastTips image{
+  width: 15rpx;
+  height: 25rpx;
+  display: block;
+  margin-left: 10rpx;
+}

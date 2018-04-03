@@ -1,0 +1,110 @@
+<!--pages/component/evaluate/evalu/evalu.wxml-->
+<view class="h15"></view>
+<view class="goodszs clearfix">
+  <view class="img fl">
+    <image src="{{imgUrl}}"></image>
+  </view>
+  <view class="zjtit fl">
+    <view class="zjt clearfix">
+      <view class="fl xd">{{tips}}</view>
+      <view class="fl tit">{{tit}}</view>
+    </view>
+    <view class="gg">{{color}};{{size}}</view>
+  </view>
+  <view class="price fr">
+   <view>{{price}}</view>
+   <view>{{num}}</view>
+  </view>
+</view>
+<view class="h2"></view>
+
+<view class="msxf clearfix">
+  <text class="fl">描述相符</text>
+  <view class="xiny fl">
+    <view class="xinh clearfix">
+      <view-item class="fl" wx:for="{{xinxinh}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinselect clearfix">
+      <view-item class="fl" wx:for="{{starLevelone.xinxin}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinindex">
+      <view-item class="fl" bindtap="starselcted" wx:for="{{xinxinh}}" wx:key="id" id="{{index}}" data-name="ms"></view-item>
+    </view>
+  </view>
+</view>
+<view class="spzl clearfix">
+  <text class="fl">商品质量</text>
+  <view class="xiny fl">
+    <view class="xinh clearfix">
+      <view-item class="fl" wx:for="{{xinxinh}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinselect clearfix">
+      <view-item class="fl" wx:for="{{starLeveltwo.xinxin}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinindex">
+      <view-item class="fl" bindtap="starselcted" wx:for="{{xinxinh}}" wx:key="id" id="{{index}}" data-name="zl"></view-item>
+    </view>
+  </view>
+</view>
+<!--评价-->
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="请留下你宝贵的评价" name="textarea"/>
+  </form>
+</view>
+<!--图片-->
+<view class="uploadImg clearfix">
+  <view class="upload_tit fl">上传图片</view>
+  <view class="choosePic fl">
+    <view class="clearfix fl">
+      <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx' wx:key="id">
+        <image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image>
+        <view class="delimg" bindtap='deleteImg'><image src="/images/delimg.png"></image></view>
+      </view-item>
+    </view>
+    <view class="img fl" bindtap="chooseImage">
+      <image src="/images/fbimg.jpg"></image>
+    </view>
+  </view>
+</view>
+<view class="h15"></view>
+<!--店铺-->
+<view class="dianpu clearfix">
+  <view class="img fl"><image src="{{dpimg}}"></image></view>
+  <view class="text fl">
+    <view class='tit'>{{dptit}}</view>
+    <view class="mjname">{{mjname}}</view>
+  </view>
+</view>
+
+<view class="h2"></view>
+<view class="fwmy clearfix">
+  <text class="fl">服务满意</text>
+  <view class="xiny fl">
+    <view class="xinh clearfix">
+      <view-item class="fl" wx:for="{{xinxinh}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinselect clearfix">
+      <view-item class="fl" wx:for="{{starLevelthree.xinxin}}" wx:key="id"><image src="{{item}}"></image></view-item>
+    </view>
+    <view class="xinindex">
+      <view-item class="fl" bindtap="starselcted" wx:for="{{xinxinh}}" wx:key="id" id="{{index}}" data-name="fw"></view-item>
+    </view>
+  </view>
+</view>
+<view class="h15"></view>
+
+<!--底部-->
+<view class="dbfbpl clearfix">
+  <view class="nmpj fl">
+    <checkbox-group>
+        <label style="display: flex;" bindtap="selectList">
+          <icon class="fl" wx:if="{{select}}" type="success" color="#ffba4a"></icon>
+          <icon class="fl" wx:else type="circle"></icon>
+          <checkbox value="" color="#ffba4a" style="opacity:0;position:absolute;left:30rpx;" checked="checked"/> 匿名评价
+        </label>
+    </checkbox-group>
+  </view>
+  <navigator class="fbpl fr" url="/pages/component/evaluate/think/think">发表评论</navigator>
+</view>
+<view class="h100"></view>

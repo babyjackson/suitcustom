@@ -1,0 +1,16 @@
+<!--pages/component/order/wxzf/wxzf.wxml-->
+<view class="zftop">
+  <view class="zfr">
+    <view class="qyuan">¥</view>
+    <view class="zismall">付款金额</view>
+    <view class="zibig">¥158.10</view>
+  </view>
+</view>
+
+<view class="ddh clearfix">
+<text class="fl">订单号:</text>
+<input type="text" disabled="false" class="fr" value="MKJGIORJKMJFOEJFEIJ"></input>
+</view>
+<view class="h125"></view>
+
+<button class="wxzfbtn" bindtap="navfun">微信支付</button>

@@ -1,0 +1,34 @@
+<!--pages/component/order/paysucc/paysucc.wxml-->
+<view class="topgou">
+  <view class="gouw">
+    <view class="gou"><icon type="success" size="40" color="#ffcd07"/></view>
+    <view class="redzi">订单金额¥15.00</view>
+  </view>
+  <view class="btn clearfix">
+    <navigator class="fl">继续购物</navigator>
+    <navigator class="fr">查看订单</navigator>
+  </view>
+</view>
+<!--安全提心-->
+<view class="aqtx">
+  <view class="tit">安全提醒</view>
+  <view>{{aqtx}}</view>
+</view>
+<view class="h15"></view>
+<!--订单详情-->
+<view class="ddxq">
+  <view class="tit">订单详情</view>
+  <view>收货信息:<text>{{ddxq}}</text></view>
+</view>
+<view class="h2"></view>
+<!--goods-->
+<view class="goodscon clearfix" wx:for="{{goodscon}}" wx:for-index="key" wx:key="id">
+  <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+  <view class="fl titleC">
+    <view class="tit">{{item.goodstit}}</view>
+    <view class="price">{{item.yuanj}}</view>
+  </view>
+  <navigator class="fr zmyd">
+    再买一单
+  </navigator>
+</view>

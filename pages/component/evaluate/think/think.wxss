@@ -1,0 +1,50 @@
+/* pages/component/evaluate/think/think.wxss */
+@import '../../../common/common.wxss';
+.thinkW{
+  width: 750rpx;
+  height: 220rpx;
+  position: relative;
+  overflow: hidden;
+}
+.thinkW .imgbg{
+  width: 750rpx;
+  height: 220rpx;
+}
+.thinkW .imgbg image{
+  width: 750rpx;
+  height: 220rpx;
+}
+.think{
+  width: 750rpx;
+  height: 220rpx;
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.h40{
+  height: 40rpx;
+}
+.h30{
+  height: 30rpx;
+}
+.think .text{
+  font-size: 30rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 750rpx;
+  text-align: center;
+  overflow: hidden;
+  color: #f7f7f7;
+}
+.think .ck{
+  width: 240rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  border:1rpx solid #fac000;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fac000;
+}

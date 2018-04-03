@@ -1,0 +1,65 @@
+<!--pages/component/details/details.wxml-->
+<!--banner-->
+<view class="banner">
+  <image src="/images/banner1.jpg"></image>
+</view>
+<!--标题-->
+<view class="caption">
+  <view class="h40"></view>
+  <view class="tit">圣得西西装男套装修身休闲正装</view>
+  <view class="h20"></view>
+  <view class="review clearfix">
+    <view-item class="fl" wx:for="{{review}}" wx:key="id">
+      <image src="{{item}}"></image>
+    </view-item>
+  </view>
+</view>
+<view class="h20color"></view>
+<view class="informW">
+  <view class="h35"></view>
+  <view class="time clearfix">
+    <view class="ico fl"><image src="/images/time.png"></image></view>
+    <view class="txt">营业时间：{{inform.time}}</view>
+  </view>
+  <view class="h35"></view>
+  <view class="address clearfix">
+    <view class="ico fl"><image src="/images/address_g.png"></image></view>
+    <view class="txt">{{inform.address}}</view>
+  </view>
+  <view class="h35"></view>
+  <view class="tipss clearfix">
+    <view class="ico fl"><image src="/images/label.png"></image></view>
+    <view class="txt">
+      <view class="tips clearfix">
+        <view wx:for="{{inform.tips}}" wx:key="id" class="fl">{{item}}</view>
+      </view>
+    </view>
+  </view>
+  <!--优惠买单-->
+  <view class="h35"></view>
+  <navigator class="purchase" url="/pages/component/order/paybill/paybill">
+    <view class="purw clearfix">
+      <view class="ico fl"><image src="/images/yes.png"></image></view>
+      优惠买单
+    </view>
+  </navigator>
+</view>
+<navigator class="discount clearfix">
+  <view class="fl ico"><image src="/images/coupon.png"></image></view>
+  <view class="text fl">代金券、则扣券</view>
+  <view class="alt fr"><image src="/images/alt_right.png"></image></view>
+</navigator>
+<view class="h20color"></view>
+<navigator class="up_to_data_eva" url="../evaluate/neweva/neweva">最新评价</navigator>
+<view class="h20color"></view>
+<view class="article">
+  <view class="cap">店铺简介</view>
+  <view class="con">
+    圣得西西装，男套装修身休闲正装新郎结婚职业商务定制西服套装男士，圣得西西装男套装修身休闲正装新郎结婚职业商务定制西服套装男士；圣得西西装男套装修身休闲正装新郎结婚职业商务定制西服套装男士。
+  </view>
+</view>
+<view class="h80"></view>
+<view class="fixedRight">
+  <view class="scroll_top circular" bindtap="goTop"><image src="/images/index_ico.png"></image></view>
+  <button class="phone circular"><image src="/images/phone_ico.png"></image></button>
+</view>

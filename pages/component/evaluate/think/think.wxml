@@ -1,0 +1,10 @@
+<!--pages/component/evaluate/think/think.wxml-->
+<view class="thinkW">
+  <view class="imgbg"><image src="/images/thinkbg.jpg"></image></view>
+  <view class="think">
+    <view class="h40"></view>
+    <view class="text">谢谢你用心写评价，这会帮助到更多想买的他们</view>
+    <view class="h30"></view>
+    <navigator class="ck">查看我的评价</navigator>
+  </view>
+</view>

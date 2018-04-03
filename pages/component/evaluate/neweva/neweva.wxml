@@ -1,0 +1,14 @@
+<!--pages/component/evaluate/neweva/neweva.wxml-->
+<view class="con-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+  <view class="evaluate" wx:for="{{evaluate}}" wx:for-index="key" wx:key="id">
+    <view-item>
+      <view class="user clearfix">
+        <view class="fl img"><image src="{{item.imgUserUrl}}"></image></view>
+        <view class="fl text"><text>{{item.userName}}</text></view>
+      </view>
+      <view class="describe"><text>{{item.userDescribe}}</text></view>
+      <view class="sai clearfix"><view><image src="{{item.certeauImg}}"></image></view></view>
+      <view class="time"><text>{{item.time}}</text></view>
+    </view-item>
+  </view>
+</view>

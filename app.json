@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/component/index",
+    "pages/component/details/details",
+    "pages/component/me/me",
+    "pages/component/order/wddd/wddd",
+    "pages/component/order/payment/payment",
+    "pages/component/order/wxzf/wxzf",
+    "pages/component/order/paysucc/paysucc",
+    "pages/component/order/paybill/paybill",
+    "pages/component/coupon/coupon",
+    "pages/component/evaluate/neweva/neweva",
+    "pages/component/evaluate/evalu/evalu",
+    "pages/component/evaluate/think/think",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/component/index",
+      "text": "门店",
+      "iconPath": "/images/tarbar1.png",
+      "selectedIconPath": "/images/tarbar1-1.png"
+    },
+    {
+      "pagePath": "pages/component/me/me",
+      "text": "我的",
+      "iconPath": "/images/tarbar2.png",
+      "selectedIconPath": "/images/tarbar2-1.png"
+    }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+/* pages/component/order/paysucc/paysucc.wxss */
+@import '../../../common/common.wxss';
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h120{
+  height: 120rpx;
+}
+.cnxh{
+  background-color: #efefef;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+}
+.recommendxg{
+  padding: 0 16rpx;
+}
+.recommendxg view-item{
+  width: 330rpx;
+  float: left;
+  padding: 10rpx;
+  height: 490rpx;
+  margin-bottom: 15rpx;
+  background: #fff;
+}
+.recommendxg view-item .img{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item image{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item .tit{
+  font-size: 24rpx;
+  color: #212121;
+  line-height: 30rpx;
+  height: 65rpx;
+  width: 330rpx;
+  overflow: hidden;
+  margin: 10rpx 0rpx 0 0rpx;
+}
+.recommendxg view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.recommendxg view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.recommendxg view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+button::after{
+  border: 0;
+}
+.recommendxg view-item:nth-of-type(odd){
+   float: left;
+ } 
+.recommendxg view-item:nth-of-type(even){
+   float: right;
+ }
+.topgou{
+  height: 330rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.gouw{
+  width: 220rpx;
+  height:180rpx;
+  margin:0rpx auto 50rpx;
+  padding-top:60rpx; 
+}
+.gouw .gou{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  text-align: center;
+  margin:0 auto;
+  font-size: 50rpx;
+  color: #fff;
+  overflow: hidden;
+  line-height: 80rpx;
+}
+.gouw .redzi{
+  text-align: center;
+  color: #ffcd07;
+  font-size: 26rpx;
+}
+.topgou .btn{
+  width: 690rpx;
+  height: 70rpx;
+  margin: 0 auto;
+}
+.topgou .btn navigator{
+  display: block;
+  width: 325rpx;
+  height: 60rpx;
+  border:3rpx solid #e2e0e3;
+  border-radius: 1rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #262626;
+}
+.aqtx{
+  font-size: 25rpx;
+  color: #8b898c;
+  padding: 30rpx 30rpx 50rpx 30rpx;
+}
+.aqtx .tit{
+  margin-bottom:15rpx;
+}
+.h15{
+  background: #efefef;
+  height: 15rpx;
+}
+.h2{
+   background: #efefef;
+  height: 2rpx;
+}
+.ddxq{
+  padding: 20rpx 30rpx;
+  color: #656565;
+  font-size: 25rpx;
+}
+.ddxq .tit{
+  color: #292929;
+}
+.goodscon{
+  padding: 30rpx 20rpx;
+}
+.goodscon .img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.goodscon .img image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.goodscon .titleC{
+  width: 410rpx;
+  font-size: 28rpx;
+  color: #1a1a1a;
+  margin-left: 20rpx;
+  line-height: 30rpx;
+}
+.goodscon .price{
+  padding-top: 20rpx;
+}
+.goodscon .zmyd{
+  width: 110rpx;
+  height: 50rpx;
+  border: 3rpx solid #ffcd07;
+  color: #ffcd07;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  margin-top:10rpx;
+}

@@ -1,0 +1,208 @@
+/* pages/component/order/payment/payment.wxss */
+@import '../../../common/common.wxss';
+.fl{
+  float:left;
+}
+page{
+  background: #fff;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.hasshdz .address{
+margin-top: 15rpx;
+padding: 25rpx 20rpx;
+border-bottom: 2rpx solid #e6e6e6;
+background-color: #fff;
+}
+.hasshdz .address .dz{
+  width: 600rpx;
+  margin-left:15rpx;
+   font-size: 30rpx;
+  color: #212420;
+}
+.dzico{
+  width: 30rpx;
+  height:35rpx;
+}
+.dzico image{
+  width: 30rpx;
+  height:35rpx;
+}
+.address .xz{
+  width: 20rpx;
+  font-size: 50rpx;
+  line-height: 40rpx;
+  margin-top:20rpx;
+}
+.address .xz image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.goodsddW .dptit{
+  height: 95rpx;
+  padding: 30rpx 35rpx;
+  line-height: 40rpx;
+  border-bottom: 2rpx solid #ededed;
+}
+.dptit .dpl{
+  width: 40rpx;
+  height: 35rpx;
+  display: block;
+  border-radius: 2rpx;
+  overflow: hidden;
+  margin-right: 5rpx;
+}
+.lxsj{
+  width: 160rpx;
+  height: 40rpx;
+}
+.lxsj image{
+width: 40rpx;
+height: 40rpx;
+float:left;
+display: block;
+}
+.lxsj text{
+  float:right;
+  color: #4e5050;
+  font-size: 30rpx;
+}
+.h20{
+  height: 20rpx;
+  background: #ededed;
+}
+.goodscon{
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 30rpx 20rpx;
+}
+.goodscon .img{
+  width: 145rpx;
+  height:145rpx;
+}
+.goodscon .img image{
+  width:145rpx;
+  height: 145rpx;
+}
+.goodscon .titleC{
+  width: 420rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+.goodscon .titleC .tit{
+  font-size: 28rpx;
+  color: #292828;
+  line-height: 40rpx;
+  width: 420rpx;
+  overflow: hidden;
+
+  
+}
+.goodscon .titleC .tips{
+  font-size: 28rpx;
+  color: #929193;
+}
+.goodscon .price{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+}
+.goodscon .price text{
+  display: block;
+  text-align: right;
+}
+.goodscon .price .yuanj{
+  color: #828282;
+  text-decoration: line-through;
+}
+.goodscon .price .sf{
+  color: #515151;
+}
+.goodscon .price .num{
+  color: #828282;
+}
+.section{
+  height:98rpx;
+  padding: 30rpx 20rpx;
+  border-bottom: 1px solid #e3e3e3;
+}
+.section textarea{
+ width: 710rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+}
+
+.gwcdb{
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    border-top:1rpx solid #f1f1f1;
+    bottom: 0;
+    background: #fff;
+  }
+  .gwcdb checkbox-group{
+  width:170rpx;
+  display:block;
+  margin-top:30rpx;
+  font-size: 28rpx;
+  color: #030303;
+  font-weight: bold;
+  margin-left:20rpx;
+}
+.gwcdb .sum{
+ font-size: 28rpx;
+ color: #ffc327;
+ line-height: 100rpx;
+ padding-right: 40rpx;
+ font-weight: bold;
+}
+.gwcdb .sum text{
+  color: #ffc327;
+}
+.gwcdb .accounts{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+  width: 230rpx;
+  height: 100rpx;
+  background: #1b1b1b;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 0;
+}  
+.zj{
+  height: 85rpx;
+  border-bottom: 1px solid #f9f9f9;
+  font-size:#3d3f4d;
+ line-height: 85rpx;
+ padding: 0 20rpx;
+ color: #262938;
+}
+.zhei{
+ color: #262938;
+}
+.zhong{
+ color: #ffc327;
+}
+button::after {
+content:" ";
+width:200%;
+height:200%;
+position:absolute;
+top:0;
+left:0;
+border:0px solid rgba(0, 0, 0, 0);
+-webkit-transform:scale(0.5);
+transform:scale(0.5);
+-webkit-transform-origin:0 0;
+transform-origin:0 0;
+box-sizing:border-box;
+border-radius:0px;
+}

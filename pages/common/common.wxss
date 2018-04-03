@@ -1,0 +1,42 @@
+page{
+    background-color: #ffffff;
+    line-height:160%;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    font-size: 32rpx;
+}
+view,button,input,textarea,select,text{ 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  }
+view{ display: block;}
+image{ vertical-align: bottom;}
+button,input,textarea,select,.radio{ 
+  -webkit-appearance: none;
+  appearance: none; 
+  border: none; 
+  resize: none; 
+  outline: none; 
+   }
+.clearfix { 
+  display:block; 
+  zoom:1; 
+  }
+.clearfix::after { 
+  content:".";
+  display:block; 
+  height:0; 
+  clear:both;
+  visibility:hidden;
+  font-size:0; 
+  }
+.fl{ float: left;}
+.fr{ float: right;}
+[type=radio].radio,[type=checkbox].checkbox{ border: 1px solid #ccc; border-radius: 50%; width: 18px; height: 18px; float: left; -webkit-transition: all ease 0.25s;background: #fff;}
+[type=radio].radio:checked{ border:5px solid #4285F4;}
+[type=checkbox].checkbox{ border-radius:3px; position: relative;}
+[type=checkbox].checkbox:checked{ border: none; background: #4285F4;}
+[type=checkbox].checkbox::after{ content:""; display: block; border:2px solid; border-color: transparent transparent #fff #fff; width:8px; height:4px; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-75%,-60%) rotate(-45deg);transform: translate(-75%,-60%) rotate(-45deg); -webkit-transform-origin: center top;transform-origin: center top; border-radius: 2px;}
+button::after{
+  border: 0;
+}

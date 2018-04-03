@@ -1,0 +1,52 @@
+<!--pages/component/order/payment/payment.wxml-->
+<!--有地址-->
+<view class="hasshdz">
+ <navigator class="address clearfix">
+  <view class="dzico fl"><image src="/images/dzico.png"></image></view>
+  <view class="fl dz">
+    <view class="dzqx">收货人：<text>{{name}} {{tel}}</text></view>
+    <view class="lxfs">收货地址：<text>{{addre}}</text></view>
+  </view>
+  <view class="xz fr"> <image src="/images/youalt.jpg"></image> </view>
+ </navigator>
+ <view class="h20"></view>
+ <view class="goodsddW">
+  <view class="dptit">
+    <image class="fl dpl" src="/images/allimg.jpg"></image>
+    <text class="fl">琪琪女鞋</text>
+    <navigator class="fr lxsj">
+      <image src="/images/lxsjico.png"></image>
+      <text>联系商家</text>
+    </navigator>
+  </view>
+  <!--goods-->
+  <navigator class="goodscon clearfix" wx:for="{{goodscon}}" wx:for-index="key" wx:key="id">
+    <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+    <view class="fl titleC">
+      <view class="tit">{{item.goodstit}}</view>
+      <view class="tips">{{item.color}} {{item.size}}</view>
+    </view>
+    <view class="fr price">
+      <text class="yuanj">{{item.yuanj}}</text>
+      <text class="sf">{{item.sj}}</text>
+      <text class="num">{{item.num}}</text>
+    </view>
+  </navigator>
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请留下你宝贵的评价" name="textarea"/>
+    </form>
+  </view>
+  <view class="zj" wx:for="{{zj}}" wx:for-index="key" wx:key="id"><text class="fl">{{item.name}}</text><text class="fr {{item.colorC}}">{{item.price}}</text></view>
+ </view>
+ </view>
+
+ <!--底部-->
+<view class="h100"></view>
+<view class="gwcdb clearfix">
+  <button class="accounts fr" bindtap="navfun">提交订单</button>
+  <view class="sum fr">
+    实付款:
+    <text class="hejprice">¥158.00</text>
+  </view>
+</view>

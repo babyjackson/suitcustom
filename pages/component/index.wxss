@@ -1,0 +1,210 @@
+/**index.wxss**/
+@import '../common/common.wxss';
+page{
+  background: #f6f6f6;
+}
+.searchTopW{
+  width: 715rpx;
+  height: 55rpx;
+  background: #ffffff;
+  border-radius: 5rpx;
+  overflow: hidden;
+  position: relative;
+  margin: 15rpx auto;
+}
+.searchTopW .location{
+  width: 145rpx;
+  height: 55rpx;
+  overflow: hidden;
+}
+.searchTopW .location .dw{
+  width: 25rpx;
+  height: 35rpx;
+  margin: 12rpx 0 0 15rpx;
+}
+.searchTopW .location .dw image{
+  width: 25rpx;
+  height: 35rpx;
+  display: block;
+}
+.searchTopW .location .city{
+  width: 100rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #3d3d3d;
+  overflow: hidden;
+}
+.xian1{
+  width: 2rpx;
+  height: 45rpx;
+  background: #e5e5e5;
+  margin-top: 5rpx;
+}
+.searchTopW .input{
+  width: 535rpx;
+  height: 55rpx;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+.searchTopW .input input{
+  width: 535rpx;
+  height: 55rpx;
+  border: 0;
+  background:rgba(0, 0, 0, 0);
+  outline: 0;
+  font-size: 24rpx;
+  color: #3d3d3d;
+}
+.searchTopW .input .search{
+  width: 65rpx;
+  height: 55rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background:rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+.searchTopW .input .search icon{
+  position: absolute;
+  top: 5rpx;
+  right: 15rpx;
+}
+.bannerW{
+  width: 715rpx;
+  height: 470rpx;
+  margin: 15rpx auto;
+}
+.bannerW image{
+  width: 715rpx;
+  height: 470rpx;
+  display: block;
+}
+.bannerW .banner{
+  width: 715rpx;
+  height: 470rpx;
+}
+.sortTab{
+  width: 750rpx;
+  height: 90rpx;
+  padding: 20rpx 0;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+}
+.sortTab view{
+  width: 33.3%;
+  height: 50rpx;
+  border-right: 2rpx solid #f1f1f1;
+  font-size: 31rpx;
+  color: #171617;
+  text-align: center;
+  line-height: 50rpx;
+}
+.sortTab .active{
+  color: #00c395;
+}
+.consort .cont-item{
+  display: none;
+}
+.consort .on{
+  display: block;
+}
+.cont-item view-item{
+  display: block;
+  width: 750rpx;
+  height: 225rpx;
+  border-top: 2rpx solid #f7f7f7;
+  overflow: hidden;
+  background: #fff;
+}
+.cont-item view-item .figure{
+  width: 195rpx;
+  height: 170rpx;
+  margin: 25rpx 0 0 18rpx;
+  overflow: hidden;
+}
+.cont-item view-item .figure image{
+  width: 195rpx;
+  height: 170rpx;
+  display: block;
+}
+.cont-item view-item .dl{
+  width: 490rpx;
+  height: 170rpx;
+  overflow: hidden;
+  margin:25rpx 15rpx 0 0;
+}
+.cont-item view-item .dl .tit{
+  height: 65rpx;
+  line-height: 65rpx;
+  width: 490rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #313031;
+}
+.cont-item view-item .dl .ptwo{
+  width: 490rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.cont-item view-item .dl .branch{
+  font-size: 25rpx;
+  color: #575857;
+  padding-right: 10rpx;
+}
+.cont-item view-item .dl .eva{
+  font-size: 25rpx;
+  color: #575857;
+  padding-left: 10rpx;
+}
+.cont-item view-item .tips{
+  width: 245rpx;
+  height: 40rpx;
+}
+.cont-item view-item .tips view{
+  width: 70rpx;
+  height: 40rpx;
+  display: block;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background: #e5f9f4;
+  overflow: hidden;
+  color: #00c395;
+  margin-left: 9rpx;
+}
+.cont-item view-item .addr{
+  width: 490rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  margin-top: 15rpx;
+}
+.cont-item view-item .addr .ico{
+  width: 25rpx;
+  height: 35rpx;
+  display: block;
+}
+.cont-item view-item .addr .ico image{
+  width: 25rpx;
+  height: 35rpx;
+  display: block;
+}
+.cont-item view-item .addr .dz{
+  width: 340rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  font-size: 20rpx;
+  color: #afacaf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-indent: 10rpx;
+}
+.cont-item view-item .addr .distance{
+  width: 120rpx;
+  overflow: hidden;
+  font-size: 20rpx;
+  color: #afacaf;
+}

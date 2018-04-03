@@ -1,0 +1,68 @@
+<!--pages/component/me/me.wxml-->
+<view class="bannerW">
+  <view class="bannerbg">
+    <image src="/images/mebanner.jpg"></image>
+  </view>
+  <view class="user">
+    <view class="photo fl">
+      <image src="/images/allimg.jpg  "></image>
+    </view>
+    <view class="username fl">babyjackson</view>
+  </view>
+</view>
+<!--卡包-->
+<view class="package">
+  <view class="wellPack" bindtap='modalTips'>
+    <navigator>
+      <image src="/images/fupack.png"></image>
+      <text>福包</text>
+    </navigator>
+  </view>
+  <view class="cardPack" bindtap='modalTips'>
+    <navigator>
+      <image src="/images/cardpack.png"></image>
+      <text>卡包</text>
+    </navigator>
+  </view>
+</view>
+<view class="h20"></view>
+<!--订单管理-->
+<view class="orderGit">
+  <view class="bigtit clearfix">
+    <view class="ico fl">
+      <image src="/images/ddgl.png"></image>
+    </view>
+    <view class="tx fl">订单管理</view>
+    <view class="alt fr"><image src="/images/altx.png"></image></view>
+  </view>
+  <view class="orderW">
+    <view class="wp">
+      <navigator url="../order/wddd/wddd">
+        <image src="/images/wdddimg.png"></image>
+        <text>我的订单</text>
+      </navigator>
+    </view>
+    <view class="wp">
+      <navigator url="../coupon/coupon">
+        <image src="/images/yhqimg.png"></image>
+        <text>我的优惠券</text>
+      </navigator>
+    </view>
+    <view class="wp" bindtap='modalTips'>
+      <navigator>
+        <image src="/images/hximg.png"></image>
+        <text>核销</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="h20"></view>
+<view class="setUp clearfix">
+  <view class="ico fl"><image src="/images/setupico.png"></image></view>
+  <view class="tx fl">设置</view>
+</view>
+<view class="h35"></view>
+<navigator class="lastTips clearfix">
+  <text class="fl">微信小程序商家管理中心</text>
+  <image src="/images/ralt.png" class="fl"></image>
+</navigator>

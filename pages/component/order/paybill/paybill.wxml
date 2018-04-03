@@ -1,0 +1,24 @@
+<!--pages/component/order/paybill/paybill.wxml-->
+<view class="h20"></view>
+<!--消费金额-->
+<form bindsubmit="formsubmit">
+  <view class="section clearfix">
+    <label class="fl">消费金额：</label>
+    <input placeholder="请询问商家后输入" class="sumofmoney fr" name="paybill"></input>
+  </view>
+  <view class="tips">提示：具体消费金额请询问店家</view>
+  <view class="h20"></view>
+  <view class="coupon clearfix">
+    <text class="fl">优惠券：</text>
+    <view class="fr no_coupon">
+    <text>暂无优惠券</text>
+      <image src="/images/alt_right.png" class="fr"></image>
+    </view>
+  </view>
+  <view class="payamount clearfix">
+    <text class="fl">实付金额：</text>
+    <view class="fr sf">0元</view>
+  </view>
+  <view class="h25"></view>
+  <button class="wxpayfor" formType="submit">微信支付</button>
+</form>

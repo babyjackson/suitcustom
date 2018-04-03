@@ -1,0 +1,79 @@
+/* pages/component/order/wxzf/wxzf.wxss */
+@import '../../../common/common.wxss';
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.zftop{
+  width: 100%;
+  height: 440rpx;
+}
+.zftop .zfr{
+  width: 180rpx;
+  height: 270rpx;
+  margin: 70rpx auto;
+}
+.zftop .zfr .qyuan{
+  width: 180rpx;
+  height:180rpx;
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+  background: #ffc327;
+  font-weight:200;
+}
+.zftop .zfr .zismall{
+  font-size: 28rpx;
+  color: #606260;
+  text-align: center;
+}
+.zftop .zfr .zibig{
+  font-size: 30rpx;
+  color: #141615;
+  text-align: center;
+  font-weight: bold;
+}
+.ddh{
+  padding: 30rpx 20rpx;
+  background: #efeff7;
+  line-height: 40rpx;
+}
+.ddh text{
+  font-size: 28rpx;
+  color: #444443;
+  display: block;
+  width: 120rpx;
+}
+.ddh input{
+  width: 500rpx;
+  text-align: right;
+  outline: 0;
+  border: 0;
+  height: 40rpx;
+  color: #ababab;
+}
+.wxzfbtn{
+  width: 715rpx;
+  background: #ffc327;
+  line-height: 110rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  letter-spacing: 5rpx;
+  font-weight: bold;
+}
+.h125{
+  height: 125rpx;
+}

@@ -1,0 +1,210 @@
+<!--pages/component/order/wddd/wddd.wxml-->
+<view class="myorderTab clearfix" bindtap="tabFun">
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">全部</view>   
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="tab-hd02" data-id="1">待付款<view class="tips">1</view></view>
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="tab-hd03" data-id="2">已付款</view>   
+  <view class="{{tabArr.curHdIndex=='3'? 'active' : ''}}" id="tab-hd04" data-id="3">待收货</view>
+  <view class="{{tabArr.curHdIndex=='4'? 'active' : ''}}" id="tab-hd05" data-id="4">待评价</view>
+</view>
+<view class="contwddd">
+  <view class="cont-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+  <!--没有订单-->
+    <view class="orderno">
+      <view class="h200"></view>
+      <view class="imgord">
+        <image src="/images/noorder.jpg"></image>
+      </view>
+      <view class="h175"></view>
+    </view>
+     <!--有订单-->
+    <view class="hasorder">
+      <view class="orderallTit">待付款</view>
+      <view class="boligationCon" wx:for="{{dfk}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">取消订单</navigator>
+          <navigator class="bgred fr" url="../payment/payment">付款</navigator>
+        </view> 
+      </view>
+    </view>
+
+    <view class="hasorder">
+      <view class="orderallTit">待收货</view>
+      <view class="boligationCon" wx:for="{{dsh}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">查看物流</navigator>
+          <navigator class="bgred fr">确认收货</navigator>
+        </view> 
+      </view>
+    </view>
+
+    <view class="hasorder">
+      <view class="orderallTit">已付款</view>
+      <view class="boligationCon" wx:for="{{yfk}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fr">提心商家发货</navigator>
+        </view> 
+      </view>
+    </view>
+    <view class="hasorder">
+      <view class="orderallTit">待评价</view>
+      <view class="boligationCon" wx:for="{{dpj}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">查看物流</navigator>
+          <navigator class="bgred fr" url="/pages/component/evaluate/evalu/evalu">评价</navigator>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <!--待付款-->
+  <view class="cont-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    <view class="hasorder">
+      <view class="orderallTit">待付款</view>
+      <view class="boligationCon" wx:for="{{dfk}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">取消订单</navigator>
+          <navigator class="bgred fr" url="../payment/payment">付款</navigator>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <!--已付款-->
+  <view class="cont-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    <view class="hasorder">
+      <view class="orderallTit">已付款</view>
+      <view class="boligationCon" wx:for="{{yfk}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fr">提心商家发货</navigator>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <!--待收货-->
+  <view class="cont-item {{tabArr.curBdIndex=='3'? 'on' : ''}}">
+    <view class="hasorder">
+      <view class="orderallTit">待收货</view>
+      <view class="boligationCon" wx:for="{{dsh}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">查看物流</navigator>
+          <navigator class="bgred fr">确认收货</navigator>
+        </view> 
+      </view>
+    </view>
+  </view>
+  <!--待评价-->
+  <view class="cont-item {{tabArr.curBdIndex=='4'? 'on' : ''}}">
+    <view class="hasorder">
+      <view class="orderallTit">待评价</view>
+      <view class="boligationCon" wx:for="{{dpj}}" wx:for-index="key" wx:key="id">
+       <view class="dptit">{{item.dptit}}</view>
+       <navigator class="goodscon clearfix">
+          <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+          <view class="fl titleC">
+            <view class="tit">{{item.goodstit}}</view>
+            <view class="tips">{{item.color}} {{item.size}}</view>
+          </view>
+          <view class="fr price">
+            <text class="yuanj">{{item.yuanj}}</text>
+            <text class="sf">{{item.sj}}</text>
+            <text class="num">{{item.num}}</text>
+          </view>
+        </navigator>
+        <view class="btn clearfix">
+          <navigator class="xian fl">查看物流</navigator>
+          <navigator class="bgred fr" url="../tjpj/tjpj">评价</navigator>
+        </view> 
+      </view>
+    </view>
+  </view>
+</view>
+
